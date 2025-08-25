@@ -1,0 +1,42 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.head{
+    display: flex;
+    padding: 5px;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.left{
+    width:50%;
+    justify-content: flex-end;
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+}
+
+.main-left{
+    width: 50%;
+
+}
+
+.main-right{
+    height: 100%;
+    width: 50%;
+    align-items: center;
+
+}
