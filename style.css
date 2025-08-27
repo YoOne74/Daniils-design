@@ -53,9 +53,8 @@ body{
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    flex-direction: end;
     align-items: center;
-}
+}   
 
 .main{
     display: flex;
