@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+/* Fixar så att länkarna ser fina ut när man hovrar/clickar på dem */
 }
 a:link {
   color: white;
@@ -22,10 +23,9 @@ a:hover {
 body{
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
-
+/* Ger navbarens dess utseende */
 .navbar{
     font-weight: bold;
     margin-top: 0.2%;
@@ -44,10 +44,12 @@ body{
     justify-content: space-between;
 }
 
+/* Ser till att höger sida av navbaren tar upp hälften av skärmen */
 .navbar-left{
     width:50%;
 }
 
+/* det samma som det innan samt ser till att de i vänster del av nabaren är ordnat och spacat korrekt */
 .navbar-right{
     display: flex;
     font-size: x-small;
@@ -56,6 +58,32 @@ body{
     justify-content: flex-end;
     align-items: center;
 }   
+
+/* Ser till att utseendet på landing sidan anpassas efter storleken på en mindre skärm (telefon) */
+@media (max-width: 600px){
+    .landing-page-main{
+        display:flex;
+        flex-direction: column;
+    }
+    .landing-page-main-left{  
+        width: 100% !important;
+
+    }
+    .landing-page-main-right{
+        display: flex;
+        flex-direction:column;
+        width: 100% !important;
+        padding-top: 30% !important;
+    }
+    .landing-page-main h1{
+        font-size: x-large;
+
+    }
+    .landing-page-main-left img{
+        height: 80% !important;
+
+    }
+}
 
 .landing-page-main{
     display: flex;
@@ -89,6 +117,8 @@ body{
 
 
 .more-main {
+    display: flex;
+    flex-direction: row;
     a:link {
     color: black;
     background-color: transparent;
@@ -105,18 +135,12 @@ body{
     color: gray;
     background-color: transparent;
     text-decoration: underline;
-    }
-
-    display: flex;
-    flex-direction: row;
-
-    
+    }    
 }
 
 .GitHub{
     width: 50%;
     text-align: center;
-
 }
 
 .GitHub img{
